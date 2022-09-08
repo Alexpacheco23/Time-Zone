@@ -1,0 +1,110 @@
+:root {
+    --back-card-header: #4E7077;
+    --color-header-font: #DEE4E5;
+    --general-number-spacing: 5px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.datetime__container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .datetime__container {
+        width: 600px;
+        padding: var(--general-number-spacing);
+    }
+}
+
+.datetime__card {
+    flex: 1;
+    height: fit-content;
+    outline: 1px solid var(--back-card-header);
+    border-radius: var(--general-number-spacing);
+    margin: var(--general-number-spacing);
+}
+
+.datetime__header {
+    margin: 0;
+    border-bottom: 1px solid var(--back-card-header);
+    padding: calc(var(--general-number-spacing) * 2);
+    background-color: var(--back-card-header);
+    border-top-left-radius: var(--general-number-spacing);
+    border-top-right-radius: var(--general-number-spacing);
+}
+
+.datetime__header-title {
+    font-size: 14px;
+    color: var(--color-header-font);
+}
+
+.datetime__body {
+    padding: var(--general-number-spacing);
+}
+
+.datetime__content {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: var(--back-card-header);
+}
+
+.datetime__content:not(:last-child) {
+    border-bottom: 1px solid var(--color-header-font);
+}
+
+.datetime__panel--ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.datetime__panel--ul li {
+    margin: 5px 0;
+}
+
+.datetime__panel--hour,
+.datetime__panel--timezone {
+    text-align: right;
+}
+
+.datetime__panel--hour {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container__tabs{
+width: 100%;
+padding: var(--general-number-spacing);
+}
+
+.container__search{
+    width: 100%;
+    padding: var(--general-number-spacing);
+}
+#contenido{
+    width: 100%;
+    padding:15px ;
+    display:flex;
+    
+}
+.listcountry__button{
+width: 90px;
+height: 40px;
+margin-right: 5px;
+
+
+}
+#tab__pane--container--listcountry{
+    width: 60%;
+    display: flex;}
+
